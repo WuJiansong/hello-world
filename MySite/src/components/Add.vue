@@ -1,6 +1,6 @@
 <template>
     <div class="add container">
-        <h1>添加用户</h1>
+        <h1 class="page-header">添加用户</h1>
         <form v-on:submit="addcustomer">
             <div class="well">
                 <h4>用户信息</h4>
@@ -18,8 +18,7 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Add</button>
             </div>
-        </form>
-        
+        </form>        
     </div>
 </template>
 
