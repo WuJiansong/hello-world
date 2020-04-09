@@ -31,7 +31,7 @@ export default {
   data () {
     return {
       customers: [],
-      alert: ""
+      alert: "!"
     }
   },
   methods:{
@@ -44,9 +44,7 @@ export default {
     }
   },
   created(){
-    if(this.$router.query.alert){
-      this.alert = this.$router.query.alert;
-    }
+    this.alert = this.$route.query.alert
     this.fetchCustomers();
   },
   components: {

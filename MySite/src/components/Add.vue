@@ -43,7 +43,7 @@ export default {
               this.$http.post("http://localhost:3000/customers",newCustomer)
                 .then(function(response){
                     //console.log(response);
-                    this.$router.push({path:"/",query:{alert:"用户信息添加成功"}});
+                    this.$router.push({path:"/customers",query:{alert:"用户信息添加成功"}});
                 })
                 e.preventDefault();
           }
